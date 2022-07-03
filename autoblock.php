@@ -1,9 +1,9 @@
 <?php
 
-$limit = 3000;
+$limit = 1000;
 
-$external_ip = "222.255.217.197";
-$skip = [$external_ip, "222.255.217.197"];
+$external_ip = "103.173.155.236";
+$skip = [$external_ip, "103.173.155.236"];
 
 $serverip=$external_ip;
 exec("netstat -ntu|awk '{print $5}'|cut -d: -f1 -s|sort|uniq -c|sort -nk1 -r",$out);
